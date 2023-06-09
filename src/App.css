@@ -13,6 +13,7 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -32,7 +33,162 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.vidro {
+  position: absolute;
+  width: 750px;
+  height: 470px;
+  left: 39px;
+  top: 36px;
+
+  background: rgba(186, 179, 179, 0.8);
+  box-shadow: -408px -251px 134px rgba(0, 0, 0, 0.01), -261px -160px 123px rgba(0, 0, 0, 0.12), -147px -90px 103px rgba(0, 0, 0, 0.4), -65px -40px 77px rgba(0, 0, 0, 0.68), -16px -10px 42px rgba(0, 0, 0, 0.78), 0px 0px 0px rgba(0, 0, 0, 0.79);
+  border-radius: 15px;
+
+}
+
+.folha {
+  position: absolute;
+  z-index: 1;
+  height: 580px;
+}
+
+.graos {
+  position: absolute;
+  left: 120px;
+  top: 5.26px;
+  z-index: 1;
+
+  height: 180px;
+
+  filter: blur(0.401627px);
+  transform: rotate(-7deg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 40px;
+  margin: 45px;
+
+}
+
+header img {
+  width: 17px;
+  height: 13px;
+}
+
+section {
+  height: 250px;
+  justify-content: space-between;
+}
+
+section,
+.btns {
+  display: flex;
+  z-index: 10;
+  gap: 40px
+}
+
+.btns {
+  margin-top: 60px;
+}
+
+.btns div {
+  display: flex;
+  gap: 10px;
+  margin-top: -70px;
+}
+
+.btns div p {
+  font-size: 10px;
+}
+
+.btns div img {
+  width: 9px;
+}
+
+.plates {
+  position: absolute;
+  height: 760px;
+
+  top: -460px;
+  left: -250px;
+}
+
+.selected {
+  background-color: #A72614;
+}
+
+
+.text {
+  position: absolute;
+
+  width: 250px;
+  margin-left: 290px;
+  z-index: 30;
+
+  top: 80px;
+}
+
+.text p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12.3px;
+
+  color: #FFFFFF;
+  line-height: 86px;
+
+}
+
+.text strong {
+  font-size: 11px;
+  padding-top: 25px;
+}
+
+.order-food {
+  margin-top: 1px
+}
+
+.text h1 {
+  font-family: 'Inter';
+  font-style: normal;
+
+  font-size: 55px;
+
+  margin-top: -55px;
+  margin-bottom: 40px;
+
+  letter-spacing: -0.06em;
+
+  color: #A72614;
+  text-shadow: -24px 108px 44px rgba(0, 0, 0, 0.02), -13px 61px 37px rgba(0, 0, 0, 0.08), -6px 27px 28px rgba(0, 0, 0, 0.13), -1px 7px 15px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.text h2 {
+  font-size: 50px;
+  margin-top: -55px;
+  color: white;
+  font-weight: 300;
+  text-shadow: -24px 108px 44px rgba(0, 0, 0, 0.02), -13px 61px 37px rgba(0, 0, 0, 0.08), -6px 27px 28px rgba(0, 0, 0, 0.13), -1px 7px 15px rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  position: absolute;
+  width: 50px;
+  right: 160px;
+}
+
+footer {
+  display: flex;
+  gap: 20px;
+  margin-left: 40px;
+  margin-top: -8px;
+  z-index: 40;
+  position: absolute;
 }
